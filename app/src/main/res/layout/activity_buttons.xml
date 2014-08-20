@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".ButtonsActivity">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nailed It"
+        android:id="@+id/nailedIt"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/booyah"
+        android:layout_alignEnd="@+id/booyah" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BooYah"
+        android:id="@+id/booyah"
+        android:layout_marginBottom="82dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Madafakaaa"
+        android:id="@+id/madafaka_big"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/booyah"
+        android:layout_toStartOf="@+id/booyah"
+        android:layout_marginTop="57dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="madafaka"
+        android:id="@+id/madafaka"
+        android:layout_alignBottom="@+id/madafaka_big"
+        android:layout_toRightOf="@+id/nailedIt"
+        android:layout_toEndOf="@+id/nailedIt" />
+</RelativeLayout>

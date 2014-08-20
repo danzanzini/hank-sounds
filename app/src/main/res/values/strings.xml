@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Hank Sounds</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="madafaka_widget_text">Madafaka</string>
+    <string name="add_widget">Add widget</string>
+    <string name="local_service_stopped">PAREI AQUI</string>
+    <string name="appwidget_text">EXAMPLE</string>
+
+</resources>
