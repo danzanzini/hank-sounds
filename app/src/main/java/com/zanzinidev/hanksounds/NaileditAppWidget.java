@@ -12,27 +12,27 @@ import android.widget.RemoteViews;
 /**
  * Implementation of App Widget functionality.
  */
-public class MadafakaAppWidget extends AppWidgetProvider {
+public class NaileditAppWidget extends AppWidgetProvider {
 
-    public static String PLAY_MADAFAKA_ACTION = "PlayMadafakaAction";
+    public static String PLAY_NAILEDIT_ACTION = "PlayNaileditAction";
 
     @Override
     public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
 
-        RemoteViews remoteViews = new RemoteViews(context.getPackageName(), R.layout.madafaka_app_widget);
+        RemoteViews remoteViews = new RemoteViews(context.getPackageName(), R.layout.nailedit_app_widget);
 
-        Intent active = new Intent(context, MadafakaAppWidget.class);
-        active.setAction(PLAY_MADAFAKA_ACTION);
+        Intent active = new Intent(context, NaileditAppWidget.class);
+        active.setAction(PLAY_NAILEDIT_ACTION);
         PendingIntent actionPendingIntent = PendingIntent.getBroadcast(context, 0, active, 0);
-        remoteViews.setOnClickPendingIntent (R.id.madafaka_widget_button, actionPendingIntent);
+        remoteViews.setOnClickPendingIntent (R.id.nailedit_widget_button, actionPendingIntent);
         appWidgetManager.updateAppWidget(appWidgetIds, remoteViews);
     }
 
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        if (intent.getAction().equals(PLAY_MADAFAKA_ACTION)) {
-            MediaPlayer mPlay = MediaPlayer.create(context, R.raw.madafaka_big);
+        if (intent.getAction().equals(PLAY_NAILEDIT_ACTION)) {
+            MediaPlayer mPlay = MediaPlayer.create(context, R.raw.nailedit);
             mPlay.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                 @Override
                 public void onCompletion(MediaPlayer mp) {
@@ -43,7 +43,6 @@ public class MadafakaAppWidget extends AppWidgetProvider {
         }
         super.onReceive(context, intent);
     }
-
 }
 
 

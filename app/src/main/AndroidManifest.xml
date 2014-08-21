@@ -17,17 +17,36 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".MadafakaAppWidget" >
+        <receiver android:name=".MadafakaAppWidget" android:label="@string/madafaka_widget_name">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-                <action android:name="com.zanzinidev.hanksounds.MadafakaAppWidget.PLAY_SOUND_ACTION"/>
+                <action android:name="com.zanzinidev.hanksounds.MadafakaAppWidget.PLAY_MADAFAKA_ACTION" />
             </intent-filter>
 
             <meta-data
                 android:name="android.appwidget.provider"
                 android:resource="@xml/madafaka_app_widget_info" />
         </receiver>
+        <receiver android:name=".BooyahAppWidget" android:label="@string/booyah_widget_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.zanzinidev.hanksounds.BooyahAppWidget.PLAY_BOOYAH_ACTION" />
+            </intent-filter>
 
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/booyah_app_widget_info" />
+        </receiver>
+        <receiver android:name=".NaileditAppWidget" android:label="@string/nailedit_widget_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.zanzinidev.hanksounds.NaileditAppWidget.PLAY_NAILEDIT_ACTION" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/nailedit_app_widget_info" />
+        </receiver>
     </application>
 
 </manifest>

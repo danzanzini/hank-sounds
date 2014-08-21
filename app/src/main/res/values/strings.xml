@@ -3,7 +3,8 @@
 
     <string name="app_name">Hank Sounds</string>
     <string name="action_settings">Settings</string>
-    <string name="add_widget">Add widget</string>
-    <string name="local_service_stopped">PAREI AQUI</string>
+    <string name="madafaka_widget_name">HS (Madafaka)</string>
+    <string name="booyah_widget_name">HS (BooYah)</string>
+    <string name="nailedit_widget_name">HS (Nailed It)</string>
 
 </resources>
