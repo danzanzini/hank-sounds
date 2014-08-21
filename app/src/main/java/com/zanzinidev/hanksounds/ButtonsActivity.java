@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import java.io.File;
 
@@ -17,31 +18,25 @@ public class ButtonsActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_buttons);
 
-        final Button booyahButton = (Button) findViewById(R.id.booyah);
+        final ImageButton booyahButton = (ImageButton) findViewById(R.id.booyah_button);
         booyahButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 playSound(R.raw.booyah);
             }
         });
 
-        final Button naileditButton = (Button) findViewById(R.id.nailedIt);
+        final ImageButton naileditButton = (ImageButton) findViewById(R.id.nailedit_button);
         naileditButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 playSound(R.raw.nailedit);
             }
         });
 
-        final Button madafakaBigButton = (Button) findViewById(R.id.madafaka_big);
-        madafakaBigButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                playSound(R.raw.madafaka_big);
-            }
-        });
 
-        final Button madafakaButton = (Button) findViewById(R.id.madafaka);
+        final ImageButton madafakaButton = (ImageButton) findViewById(R.id.madafaka_button);
         madafakaButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                playSound(R.raw.madafaka);
+                playSound(R.raw.madafaka_big);
             }
         });
     }
