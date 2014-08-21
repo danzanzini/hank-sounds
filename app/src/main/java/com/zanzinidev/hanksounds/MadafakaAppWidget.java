@@ -24,7 +24,7 @@ public class MadafakaAppWidget extends AppWidgetProvider {
         Intent active = new Intent(context, MadafakaAppWidget.class);
         active.setAction(PLAY_MADAFAKA_ACTION);
         PendingIntent actionPendingIntent = PendingIntent.getBroadcast(context, 0, active, 0);
-        remoteViews.setOnClickPendingIntent (R.id.madafaka_widget, actionPendingIntent);
+        remoteViews.setOnClickPendingIntent (R.id.madafaka_widget_button, actionPendingIntent);
         appWidgetManager.updateAppWidget(appWidgetIds, remoteViews);
     }
 
